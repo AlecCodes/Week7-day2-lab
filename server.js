@@ -10,6 +10,9 @@ const PORT = 3000;
 //Routes
 //////////////////////////////////////////
 
+app.get('/greeting/:name', (req,res) => {
+    res.send(`Hello, ${req.params.name}`)
+})
 
 //////////////////////////////////////////
 //Server listener
